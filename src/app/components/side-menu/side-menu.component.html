@@ -1,0 +1,15 @@
+<div class="mr-4">
+  <ul class="flex flex-col w-full font-medium text-gray-700 mt-8">
+    <a
+      *ngFor="let link of links"
+      [routerLink]="link.path"
+      routerLinkActive=""
+      class="w-full"
+    >
+      <li class="flex rounded w-full py-1 px-3 gap-2 text-sky-700 bg-sky-100">
+        <fa-icon [icon]="link.icon"></fa-icon>
+        <p>{{ link.title }}</p>
+      </li>
+    </a>
+  </ul>
+</div>

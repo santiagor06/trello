@@ -1,1 +1,18 @@
 <app-navbar></app-navbar>
+<div class="container mx-auto w-full flex mt-10">
+  <div class="w-1/5">
+    <app-side-menu></app-side-menu>
+  </div>
+  <div class="w-full">
+    <h1 class="text-lg font-bold mb-4">
+      <fa-icon [icon]="faClock"></fa-icon>Recently viewed
+    </h1>
+    <div class="grid grid-cols-4 gap-4">
+      <app-board-card
+        *ngFor="let board of boards"
+        [color]="board.color"
+        [title]="board.title"
+      ></app-board-card>
+    </div>
+  </div>
+</div>
