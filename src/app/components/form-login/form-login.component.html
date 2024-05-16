@@ -1,0 +1,26 @@
+<div class="bg-white rounded shadow py-4 px-6">
+  <div class="mb-4 divide-y">
+    <h1 class="text-center font-semibold pt-4 pb-8">Log In To Trello</h1>
+    <form novalidate class="space-y-4">
+      <div class="relative">
+        <input type="text"
+        placeholder="Enter email"
+        class="w-full rounded bg-gray-100 border-2 border-gray-300">
+      </div>
+      <div class="relative">
+        <input type="password"
+        placeholder="Enter password"
+        class="w-full rounded bg-gray-100 border-2 border-gray-300">
+      </div>
+      <div>
+        <app-btn [typeBtn]="'submit'">Log In</app-btn>
+      </div>
+    </form>
+    <br>
+    <div class="text-sm font-ligh text-cyan-600 flex gap-4 justify-center pt-4">
+      <p class="cursor-pointer">Can't log in?</p>
+      <span>°</span>
+      <p class="cursor-pointer">Sign up for an account</p>
+    </div>
+  </div>
+</div>
